@@ -1,0 +1,16 @@
+{
+  "name": "afritrade-blog-generator",
+  "version": "1.0.0",
+  "description": "AI-powered trade intelligence blog post generator for AfriTrade Gateway",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-blog-post.js",
+    "generate:topic": "node scripts/generate-blog-post.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.38.0"
+  }
+}

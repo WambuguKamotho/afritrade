@@ -1,0 +1,62 @@
+# ══════════════════════════════════════════════════════════════
+#  robots.txt — AfriTrade Gateway
+#  https://www.afritrade.africa
+#  Pan-African Import Export Trade Facilitation | Nairobi, Kenya
+#  Last updated: 2026-03-15
+# ══════════════════════════════════════════════════════════════
+
+# ── Allow all major search engine crawlers ──────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 10
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 5
+
+User-agent: facebot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ── Allow all others ─────────────────────────────────────────────
+User-agent: *
+Allow: /
+
+# ── Disallow admin, private, staging paths (add when you have them) ──
+# User-agent: *
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /staging/
+# Disallow: /cgi-bin/
+
+# ── Sitemap location ─────────────────────────────────────────────
+Sitemap: https://www.afritrade.africa/sitemap.xml
+
+# ── Host directive (helps some crawlers with canonical domain) ───
+Host: https://www.afritrade.africa
