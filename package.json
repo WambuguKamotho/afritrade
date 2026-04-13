@@ -1,7 +1,7 @@
 {
-  "name": "afritrade-blog-generator",
+  "name": "wambugu-kamotho-trade",
   "version": "1.0.0",
-  "description": "AI-powered trade intelligence blog post generator for AfriTrade Gateway",
+  "description": "AI-powered trade intelligence blog post generator for Wambugu Kamotho",
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate-blog-post.js",

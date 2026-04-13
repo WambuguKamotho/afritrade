@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * AfriTrade Gateway — AI Blog Post Generator
+ * Wambugu Kamotho — AI Blog Post Generator
  *
  * Generates trade intelligence articles via Claude API and appends them to
  * blog/posts.json so the static website serves fresh content automatically.
@@ -124,7 +124,7 @@ async function main() {
     .join('\n') || '(none yet)';
 
   // ── System prompt (cached — stable across runs) ──────────────────────────
-  const systemPrompt = `You are the editorial intelligence for the AfriTrade Gateway trade intelligence blog. AfriTrade Gateway is a Pan-African import/export trade facilitation company headquartered in Nairobi, Kenya. We facilitate:
+  const systemPrompt = `You are the editorial intelligence for the Wambugu Kamotho trade intelligence blog. Wambugu Kamotho is a Pan-African import/export trade facilitation company headquartered in Nairobi, Kenya. We facilitate:
 - Imports into Africa: crude oil, refined fuels, industrial machinery, fertilizers, agrochemicals, pharmaceuticals
 - Exports from Africa: copper, gold, cobalt, coltan, lithium, cocoa, coffee, tea, grains, oilseeds, horticultural produce
 - Services: trade mandate origination and verification, supply chain aggregation, AfCFTA compliance, customs clearance, multimodal logistics
@@ -159,7 +159,7 @@ The content field must be valid HTML with:
 - No <div>, no <span>, no inline styles, no class attributes`;
 
   // ── User message ─────────────────────────────────────────────────────────
-  const userMessage = `Write a trade intelligence article for the AfriTrade Gateway insights blog.
+  const userMessage = `Write a trade intelligence article for the Wambugu Kamotho insights blog.
 
 TOPIC: ${topic}
 PUBLISH DATE: ${today}
@@ -171,7 +171,7 @@ Requirements:
 1. Open with a specific data point or structural contradiction — no generic scene-setting
 2. Include at least one section with concrete operational detail (cost figures, volumes, corridor names, policy references, or timeline milestones)
 3. Close with practical implications for a commodity trader, logistics operator, or trade finance professional
-4. Maintain consistent AfriTrade Gateway voice: authoritative, specific, commercially grounded
+4. Maintain consistent Wambugu Kamotho voice: authoritative, specific, commercially grounded
 
 Return ONLY the JSON object as specified.`;
 

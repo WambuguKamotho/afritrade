@@ -1,5 +1,5 @@
 # ══════════════════════════════════════════════════════════════
-#  robots.txt — AfriTrade Gateway
+#  robots.txt — Wambugu Kamotho
 #  https://www.afritrade.africa
 #  Pan-African Import Export Trade Facilitation | Nairobi, Kenya
 #  Last updated: 2026-03-15

@@ -62,8 +62,8 @@ jobs:
       # ── 6. Commit and push ───────────────────────────────────────────────
       - name: Commit and push changes
         run: |
-          git config --global user.name  "AfriTrade Blog Bot"
-          git config --global user.email "bot@afritrade.africa"
+          git config --global user.name  "Wambugu Kamotho Bot"
+          git config --global user.email "bot@wambugu.trade"
 
           # Stage data, generated pages, and sitemap
           git add blog/posts.json blog/*.html sitemap.xml

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * AfriTrade Gateway — Blog Static Builder
+ * Wambugu Kamotho — Blog Static Builder
  *
  * Reads blog/posts.json and generates:
  *  - blog/[slug].html  for every post  (SEO-ready individual post pages)
@@ -28,7 +28,7 @@ const NAV = `
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <nav id="main-nav" role="navigation" aria-label="Main navigation">
   <a href="/" class="nav-logo">
-    <div class="wordmark">AfriTrade Gateway</div>
+    <div class="wordmark">Wambugu Kamotho</div>
     <div class="tagline">Your Bridge to African Markets</div>
   </a>
   <ul class="nav-links">
@@ -48,7 +48,7 @@ const FOOTER = `
   <div class="section-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="wordmark">AfriTrade Gateway</div>
+        <div class="wordmark">Wambugu Kamotho</div>
         <div class="sub">Your Bridge to African Markets</div>
         <p>Pan-African trade facilitation spanning imports, exports, mandate services, compliance, supply chain management, and multimodal logistics across 54 nations.</p>
       </div>
@@ -87,7 +87,7 @@ const FOOTER = `
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; ${new Date().getFullYear()} AfriTrade Gateway. All rights reserved. Nairobi, Kenya &mdash; Pan-African Import &amp; Export Trade Facilitation.</p>
+      <p>&copy; ${new Date().getFullYear()} Wambugu Kamotho. All rights reserved. Nairobi, Kenya &mdash; Pan-African Import &amp; Export Trade Facilitation.</p>
       <div class="footer-social">
         <a href="#">LinkedIn</a>
         <a href="#">WhatsApp</a>
@@ -151,7 +151,7 @@ function buildPostPage(post, allPosts) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>${esc(post.title)} | AfriTrade Gateway</title>
+<title>${esc(post.title)} | Wambugu Kamotho</title>
 <meta name="description" content="${esc(post.excerpt)}">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="${BASE_URL}/blog/${esc(post.slug)}.html">
@@ -161,10 +161,10 @@ function buildPostPage(post, allPosts) {
 <meta property="og:title" content="${esc(post.title)}">
 <meta property="og:description" content="${esc(post.excerpt)}">
 <meta property="og:image" content="https://images.unsplash.com/photo-1692369584496-3216a88f94c1?q=80&w=1200&auto=format&fit=crop">
-<meta property="og:site_name" content="AfriTrade Gateway">
+<meta property="og:site_name" content="Wambugu Kamotho">
 <meta property="og:locale" content="en_KE">
 <meta property="article:published_time" content="${schemaDate}T07:00:00+03:00">
-<meta property="article:author" content="AfriTrade Gateway">
+<meta property="article:author" content="Wambugu Kamotho">
 <meta property="article:section" content="${esc(post.category)}">
 ${(post.tags || []).map(t => `<meta property="article:tag" content="${esc(t)}">`).join('\n')}
 
@@ -184,12 +184,12 @@ ${(post.tags || []).map(t => `<meta property="article:tag" content="${esc(t)}">`
   "dateModified": "${schemaDate}T07:00:00+03:00",
   "author": {
     "@type": "Organization",
-    "name": "AfriTrade Gateway",
+    "name": "Wambugu Kamotho",
     "url": "${BASE_URL}"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "AfriTrade Gateway",
+    "name": "Wambugu Kamotho",
     "url": "${BASE_URL}",
     "logo": { "@type": "ImageObject", "url": "${BASE_URL}/favicon.svg" }
   },
@@ -258,9 +258,9 @@ ${NAV}
         </div>` : ''}
 
         <div class="sidebar-card">
-          <h4>About AfriTrade</h4>
+          <h4>About Wambugu Kamotho</h4>
           <p style="font-size:0.84rem;line-height:1.65;color:var(--cream-dim)">
-            AfriTrade Gateway is a Pan-African import/export trade facilitation company headquartered in Nairobi, Kenya. We operate across all 54 African nations.
+            Wambugu Kamotho is a Pan-African import/export trade facilitation company headquartered in Nairobi, Kenya. We operate across all 54 African nations.
           </p>
           <a href="/#contact" class="btn-primary" style="margin-top:1.2rem;font-size:0.72rem">Engage Us &rarr;</a>
         </div>
