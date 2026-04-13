@@ -55,12 +55,18 @@ jobs:
           fi
 
       # ── 5. Commit and push ───────────────────────────────────────────────
-      - name: Commit updated posts.json
+      # ── 5. Build static post pages + sitemap ─────────────────────────────
+      - name: Build static blog pages
+        run: npm run build
+
+      # ── 6. Commit and push ───────────────────────────────────────────────
+      - name: Commit and push changes
         run: |
           git config --global user.name  "AfriTrade Blog Bot"
           git config --global user.email "bot@afritrade.africa"
 
-          git add blog/posts.json
+          # Stage data, generated pages, and sitemap
+          git add blog/posts.json blog/*.html sitemap.xml
 
           if git diff --staged --quiet; then
             echo "No changes detected — skipping commit."

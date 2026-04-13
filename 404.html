@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found | AfriTrade Gateway</title>
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="theme-color" content="#0E0B06">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+.error-page { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 4rem 2rem; background: var(--earth); }
+.error-code { font-family: 'Cormorant Garamond', serif; font-size: clamp(6rem, 20vw, 14rem); font-weight: 300; color: rgba(201,168,76,0.08); line-height: 1; margin-bottom: -2rem; }
+.error-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; color: var(--cream); margin-bottom: 1rem; }
+.error-text { font-size: 1rem; color: var(--cream-dim); max-width: 420px; line-height: 1.75; margin-bottom: 2.5rem; }
+.error-links { display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; }
+</style>
+</head>
+<body>
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="nav-logo">
+    <div class="wordmark">AfriTrade Gateway</div>
+    <div class="tagline">Your Bridge to African Markets</div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#services">Services</a></li>
+    <li><a href="/#commodities">Commodities</a></li>
+    <li><a href="/blog/">Insights</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+  <a href="/#contact" class="nav-cta">Engage Us</a>
+</nav>
+
+<main class="error-page" id="main-content">
+  <div class="error-code" aria-hidden="true">404</div>
+  <h1 class="error-title">Page Not Found</h1>
+  <p class="error-text">The page you are looking for may have moved or no longer exists. Return to the homepage or browse our trade insights.</p>
+  <div class="error-links">
+    <a href="/" class="btn-primary">Back to Home</a>
+    <a href="/blog/" class="btn-ghost">Trade Insights</a>
+  </div>
+</main>
+
+<script>
+var nav = document.getElementById('main-nav');
+window.addEventListener('scroll', function() {
+  nav.style.padding = window.scrollY > 60 ? '0.85rem 4rem' : '1.4rem 4rem';
+}, { passive: true });
+</script>
+</body>
+</html>

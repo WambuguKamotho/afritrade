@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createHash } from 'crypto';
+import { buildBlog } from './build-blog.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT  = join(__dirname, '..');
@@ -238,6 +239,10 @@ Return ONLY the JSON object as specified.`;
   console.log(`  Tags     : ${newPost.tags.join(', ')}`);
   console.log(`  Read time: ${newPost.readTime}`);
   console.log(`\n  Saved to : blog/posts.json  (${data.posts.length} total posts)\n`);
+
+  // Rebuild all static post pages and sitemap
+  console.log('Building static blog pages...');
+  await buildBlog();
 
   // Log token usage if available (useful for cost monitoring)
   if (response.usage) {

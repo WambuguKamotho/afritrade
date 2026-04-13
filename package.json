@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "generate": "node scripts/generate-blog-post.js",
-    "generate:topic": "node scripts/generate-blog-post.js"
+    "generate:topic": "node scripts/generate-blog-post.js",
+    "build": "node scripts/build-blog.js"
   },
   "engines": {
     "node": ">=18.0.0"
